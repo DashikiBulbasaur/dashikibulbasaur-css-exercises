@@ -1,0 +1,23 @@
+.odd {
+    /* hex. light pink*/
+    background-color: #eabbb0;
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+#second {
+    /* blue. rgb*/
+    color: rgb(0, 0, 255);
+    font-size: 36px;
+}
+
+#fourth {
+    /* light green. hsl*/
+    background-color: hsl(123, 36%, 82%);
+    font-size: 24px;
+    /* 700 = bold. can go from 1 to 1000*/
+    font-weight: 700;
+}
+
+.odd.special-third {
+    font-size: 24px; 
+}
