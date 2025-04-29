@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex Header 2</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="header">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Header 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="right-side">
       <div class="logo">
         LOGO
       </div>
@@ -17,10 +20,24 @@
         <li><a href="https://google.com">link-two</a></li>
         <li><a href="https://google.com">link-three</a></li>
       </ul>
+    </div>
+    <div class="left-side">
       <button class="notifications">
         1 new notification
       </button>
       <div class="profile-image"></div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
+
+<!-- this is done. I learned a lot from doing this, because while I thought my solution
+was close enough to the desired state of the html page, the provided solution was much
+more efficient and stripped down in my opinion. like the correct use of justify-content:
+space-between instead of using margin-left/right: auto to set the left and right side,
+and I completely forgot about using the gap property. using align-item: center on the
+children instead of the parent .header was also something I didn't consider. doing that made
+me see that there was a slight difference between them in the placement, and that doing it
+on the children instead of in the parent made my page look like the intended solution. just
+something to think about in future css and flexbox stuff -->
